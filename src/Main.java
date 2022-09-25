@@ -25,10 +25,26 @@ public class Main {
         for (; num >= 1; num--) {
             System.out.print(num + " ");
         }
+        System.out.print("\n");
+    }
+
+    //Домашнее задание -1. Задача 3
+    public static void task1_3(){
+        System.out.println("Задание 3: ");
+        int currentYear = 2022;
+        int population = 12_000_000;
+        double fertility = (double) 17 / 1000;
+        double mortality = (double) 8 / 1000;
+
+        for (int year = currentYear + 1 ; year <= currentYear + 10; year++) {
+            population += Math.round(fertility * population) - Math.round(mortality * population);
+            System.out.println("Год " +  year + ", численность населения составляет " + population);
+        }
     }
 
     public static void main(String[] args) {
         task1_1();
         task1_2();
+        task1_3();
     }
 }
