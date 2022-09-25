@@ -106,6 +106,15 @@ public class Main {
             }
         }
     }
+
+    //Домашнее задание -3. Задача 1
+    public static void task3_2(){
+        System.out.println("Задание 9: ");
+
+        for (int i = 1; i <= 10; i++) {
+            System.out.println("2*"+ i + " = " + i * 2);
+        }
+    }
     public static void main(String[] args) {
         task1_1();
         task1_2();
@@ -115,5 +124,6 @@ public class Main {
         task2_3();
         task2_4();
         task3_1();
+        task3_2();
     }
 }
