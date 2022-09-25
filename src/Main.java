@@ -70,7 +70,7 @@ public class Main {
 
     //Домашнее задание -2. Задача 3
     public static void task2_3(){
-        System.out.println("Задание 5: ");
+        System.out.println("Задание 6: ");
         int currentSumm = 15_000;
         int cntYear = 9;
         for (int month = 1; month <= cntYear * 12 ; month++) {
@@ -83,12 +83,26 @@ public class Main {
 
     //Домашнее задание -2. Задача 4
     public static void task2_4(){
-        System.out.println("Задание 6: ");
+        System.out.println("Задание 7: ");
         int friday = 2;
 
         for (int curDay = 1; curDay <= 31 ; curDay++) {
             if ((curDay - friday) % 7 == 0) {
                 System.out.println("Сегодня пятница, " + curDay + "-е число. Необходимо подготовить отчет.");
+            }
+        }
+    }
+
+    //Домашнее задание -3. Задача 1
+    public static void task3_1(){
+        System.out.println("Задание 8: ");
+        int currentDate = 2022;
+        int startDate = currentDate - 200;
+        int endDate = currentDate + 100;
+
+        for (int i = startDate; i <= endDate ; i++){
+            if (i % 79 == 0) {
+                System.out.println(i);
             }
         }
     }
@@ -100,5 +114,6 @@ public class Main {
         task2_2();
         task2_3();
         task2_4();
+        task3_1();
     }
 }
