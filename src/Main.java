@@ -80,6 +80,18 @@ public class Main {
             }
         }
     }
+
+    //Домашнее задание -2. Задача 4
+    public static void task2_4(){
+        System.out.println("Задание 6: ");
+        int friday = 2;
+
+        for (int curDay = 1; curDay <= 31 ; curDay++) {
+            if ((curDay - friday) % 7 == 0) {
+                System.out.println("Сегодня пятница, " + curDay + "-е число. Необходимо подготовить отчет.");
+            }
+        }
+    }
     public static void main(String[] args) {
         task1_1();
         task1_2();
@@ -87,5 +99,6 @@ public class Main {
         task2_1();
         task2_2();
         task2_3();
+        task2_4();
     }
 }
