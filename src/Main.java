@@ -42,9 +42,22 @@ public class Main {
         }
     }
 
+    //Домашнее задание -2. Задача 1
+    public static void task2_1(){
+        System.out.println("Задание 4: ");
+        int currentSumm = 15_000;
+        int maxSumm = 12_000_000;
+        int month = 1;
+        for (; currentSumm < maxSumm ; month++) {
+            currentSumm+= currentSumm * 0.07;
+            System.out.println("month= " + month + " currentSumm= " + currentSumm);
+        }
+    }
+
     public static void main(String[] args) {
         task1_1();
         task1_2();
         task1_3();
+        task2_1();
     }
 }
